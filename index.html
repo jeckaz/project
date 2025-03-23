@@ -3,19 +3,27 @@
     <head>
         <title>Портфолио</title>
         <meta charset="UTF-8">
+        <link rel="stylesheet" href="styles.css">
     </head>
     <body class="page-body">
         <header class="page-header">
             <div class="navbar">
-                <ul>
-                    <li><a href="#main-info">Главная</a></li>
-                    <li><a href="#about-me">Обо мне</a></li>
-                    <li><a href="#skills">Навыки и стэк</a></li>
-                    <li><a href="">Проекты</a></li>
+                <ul class="navbar-list">
+                    <li class="navbar-list-item"><a href="#main-info">Главная</a></li>
+                    <li class="navbar-list-item"><a href="#about-me">Обо мне</a></li>
+                    <li class="navbar-list-item"><a href="#skills">Навыки и стэк</a></li>
+                    <li class="navbar-list-item"><a href="">Проекты</a></li>
+                    <li class="navbar-list-item">+ 1 item</li>
+                    <li class="navbar-list-item">+ 1 item</li>
+                    <li class="navbar-list-item">+ 1 item</li>
+                    <li class="navbar-list-item">+ 1 item</li>
+                    <li class="navbar-list-item">+ 1 item</li>
+                    <li class="navbar-list-item">+ 1 item</li>
+                    <li class="navbar-list-item">+ 1 item</li>
                 </ul>
             </div>
-            <div class="contacts-in-navbar">
-                <a href="">Связаться со мной</a>
+            <div class="header-contact-button-wrapper">
+                <button class="header-contat-button">Связаться со мной</button>
             </div>
         </header>
 
@@ -39,9 +47,61 @@
             </section>
 
             <section class="skills" id="skills">
-                <h1 class="skills-header"></h1>
-                
+                <h1 class="skills-header">НАВЫКИ И СТЕК ТЕХНОЛОГИЙ</h1>
+                <div class="skills-table"> 
+
+                    <section class="skills-table-section">
+                        <div class="skills-table-icon-wrapper">
+                            <img class="skills-table-icon" src="icons/Development.svg" alt="development icon">
+                        </div>
+                        <h2 class="skills-table-header">Разработка сайтов</h2>
+                        <p class="skills-table-description">Тут будет описание навыков разработки</p>
+                        <h3 class="skills-table-subtitile">Языки</h3>
+                        <ul class="skills-table-list">
+                            <li class="skills-table-list-item">HTML</li>
+                            <li class="skills-table-list-item">CSS</li>
+                            <li class="skills-table-list-item">Still learning something else</li>
+                        </ul>
+                        <h3 class="skills-table-subtitile">Инструменты</h3>
+                        <ul class="skills-table-list">
+                            <li class="skills-table-list-item">VS Code</li>
+                            <li class="skills-table-list-item">Github</li>
+                            <li class="skills-table-list-item">Git</li>
+                            <li class="skills-table-list-item">В доработке</li>
+                        </ul>   
+                    </section>
+
+                    <section class="skills-table-section">
+                        <div class="skills-table-icon-wrapper">
+                            <img class="skills-table-icon" src="icons/Design.svg" alt="Design icon">
+                        </div>
+                        <h2 class="skills-table-header">Дизайн</h2>
+                        <p class="skills-table-description">Краткое описание навыков дизайна (пока их нет =)</p>
+                        <h3 class="skills-table-subtitile">Инструменты</h3>
+                        <ul class="skills-table-list">
+                            <li class="skills-table-list-item">Figma</li>
+                            <li class="skills-table-list-item">Что-то ещё</li>
+                            <li class="skills-table-list-item">И ещё что-то</li>
+                        </ul>   
+                    </section>
+
+                    <section class="skills-table-section">
+                        <div class="skills-table-icon-wrapper">
+                            <img class="skills-table-icon" src="icons/SoftSkills.svg" alt="Softskills icon">
+                        </div>
+                        <h2 class="skills-table-header">Soft skills</h2>
+                        <p class="skills-table-description">Краткое описание софт скиллов. Умение работать в команде, с клиентамии и прочее</p>
+                        <h3 class="skills-table-subtitile">Навыки</h3>
+                        <ul class="skills-table-list">
+                            <li class="skills-table-list-item">Еще не придумал</li>
+                            <li class="skills-table-list-item">тут придумаю</li>
+                            <li class="skills-table-list-item">в целом умею всё</li>
+                        </ul>   
+                    </section>
+                </div>                
             </section>
+
+
 
         </main>
     </body>
