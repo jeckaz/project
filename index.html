@@ -12,18 +12,11 @@
                     <li class="navbar-list-item"><a href="#main-info">Главная</a></li>
                     <li class="navbar-list-item"><a href="#about-me">Обо мне</a></li>
                     <li class="navbar-list-item"><a href="#skills">Навыки и стэк</a></li>
-                    <li class="navbar-list-item"><a href="">Проекты</a></li>
-                    <li class="navbar-list-item">+ 1 item</li>
-                    <li class="navbar-list-item">+ 1 item</li>
-                    <li class="navbar-list-item">+ 1 item</li>
-                    <li class="navbar-list-item">+ 1 item</li>
-                    <li class="navbar-list-item">+ 1 item</li>
-                    <li class="navbar-list-item">+ 1 item</li>
-                    <li class="navbar-list-item">+ 1 item</li>
+                    <li class="navbar-list-item"><a href="#projects">Проекты</a></li>              
                 </ul>
             </div>
             <div class="header-contact-button-wrapper">
-                <button class="header-contat-button">Связаться со мной</button>
+                <button class="header-contact-button"><a href="#contacts">Связаться со мной</a></button>
             </div>
         </header>
 
@@ -37,7 +30,7 @@
             </section> 
 
             <section class="about-me" id="about-me">
-                <div class="about-me-textwrapper">
+                <div class="about-me-text-wrapper">
                     <h1 class="about-me-header">ПРИВЕТ! Я ВЕБ-РАЗРАБОТЧИК (СТУДЕНТ)</h1>
                     <p class="about-me-text">Занимаюсь изучением fullstack разработки. Можете посмотреть на один из моих первых проектов-портфолио.</p>
                 </div>
@@ -101,8 +94,65 @@
                 </div>                
             </section>
 
-
-
+            <section class="projects" id="projects">
+                <h1 class="projects-header">ПРОЕКТЫ</h1>
+                <div class="projects-display">
+                    <figure class="project-item">
+                        <a class="project-link" href=""><img class="project-image" src="images/test-project-image.jpg" alt="project screenshont"></a>                       
+                    </figure>
+                    <figure class="project-item">
+                        <a class="project-link" href=""><img class="project-image" src="images/project_in_development.jpg" alt="project screenshont"></a>                       
+                    </figure>
+                    <figure class="project-item">
+                        <a class="project-link" href=""><img class="project-image" src="images/project_in_development.jpg" alt="project screenshont"></a>                       
+                    </figure>
+                    <figure class="project-item">
+                        <a class="project-link" href=""><img class="project-image" src="images/project_in_development.jpg" alt="project screenshont"></a>                       
+                    </figure>
+                    <figure class="project-item">
+                        <a class="project-link" href=""><img class="project-image" src="images/project_in_development.jpg" alt="project screenshont"></a>                       
+                    </figure>
+                    <figure class="project-item">
+                        <a class="project-link" href=""><img class="project-image" src="images/project_in_development.jpg" alt="project screenshont"></a>                       
+                    </figure>                   
+                </div>
+                <button class="projects-github-button"><a class="project-github-link" href="https://github.com/jeckaz">Посмотреть на Github</a></button>
+            </section>
         </main>
+
+        <section class="contact">
+            <div class="contact-text-wrapper">
+                <h1 class="contact-header">Хотите заказать сайт?</h1>
+                <p class="contact-text">Напишите мне, чтобы обсудить детали.</p>
+            </div>
+            <div class="contact-form-wrapper" id="contact">
+                <div class="contact-image-wrapper">
+                    <img class="contact-image" src="images/form.png" alt="e-mail image">
+                </div>
+                <form class="contact-form" id="contact-form">
+                    <fieldset class="contact-form-name-email">
+                        <label class="contact-form-field" for="name">
+                            <span class="contact-form-label">Имя</span>
+                            <input class="contact-form-input" type="text" name="name" />                            
+                        </label>
+
+                        <label class="contact-form-field" for="email">
+                            <span class="contact-form-label" for="email">E-mail</span>
+                            <input class="contact-form-input" type="email" name="email" />
+                        </label>
+                    </fieldset>
+
+                    <fieldset class="contact-form-text">
+                        <label class="contact-form-field" for="body">
+                            <span class="contact-form-label">Расскажите свою задачу</span>
+                            <textarea class="contact-form-input" name="body"></textarea>
+                        </label>
+                    </fieldset>
+
+
+                </form>
+            </div>
+        </section>
+
     </body>
 </html>

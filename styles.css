@@ -53,7 +53,7 @@ a {
 }
 
 a:hover {
-    opacity: 0.5; 
+    text-decoration: none; 
 }
 
 a:visited {
@@ -64,41 +64,134 @@ a:visited {
 
 body {
     margin: 0 auto;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-self: unset;
-    border: 3px solid red;
-    background-color: bisque;
+    padding: 0;   
 }
 
 .page-header {
     display: grid;
-    grid-template-columns: 3fr 1fr;
-    background-color: aqua;
-    align-items: center;
+    grid-template-columns: 3fr 1fr;    
+    align-items: center;;
+    width: 60%;
+    margin: 0 auto;
+}
+
+h1 {
+    font-family: TildaSans;
+    font-size: 45px;
+    font-weight: 800px;
+    text-align: center;
+    color: #141C3A;   
+}
+
+p {
+    font-family: TildaSans;
+    font-size: 30px;
+    font-weight: 300px;
+}
+
+fieldset {
+    border: none;
+}
+
+textarea:focus, input:focus {
+    outline: none;
 }
 
 .navbar-list {
     list-style: none;
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;      
-    border: 2px solid #f040e1;
-}
-
-.navbar-list-item {
+    flex-wrap: nowrap;    
     margin-right: 20px;
 }
 
+.navbar-list-item:not(:last-child) {
+    margin-right: 20px;
+}
 
+.navbar-list-item {
+    font-family: TildaSans;
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.navbar-list-item:hover {
+    color: #8063A6;
+}
+
+.header-contact-button {
+    background-color: white;
+    color: #FF9235;
+    border: 3px solid #FF9235;
+    border-radius: 15px;
+    height: 40px;
+    width: 200px;
+    font-family: TildaSans;
+    font-size: 20px;
+    font-weight: 600;    
+}
+
+.header-contact-button:hover {
+    background-color: #FF9235;
+    color: white;
+}
+
+.main-info {
+    margin: 0 auto;
+    max-width: 800px;    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-info-image-wrapper {
+    width: 600px;
+    height: auto;
+    overflow: hidden;    
+}
+
+.main-info-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.main-info-text {
+    text-align: center;
+}
+
+.about-me {
+    width: 100%;
+}
+
+.about-me-text-wrapper {
+    background-color: #5DD9C8;
+    width: 100%;
+    min-height: 450px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: -9%;
+}
+
+.about-me-header {
+    margin: 5% auto 20px auto;
+    width: 50%; 
+}
+
+.about-me-text {
+    margin: 0 auto 10% auto;
+    width: 50%;
+    text-align: center;
+    font-size: 35px;
+}
 
 .about-me-image-wrapper {
-    width: 300px;
+    margin: 0 auto;
+    width: 30%;
     height: auto;
     overflow: hidden;
-    border: 2px solid red;
+    border-radius: 20px;
+    border: 4px solid #5DD9C8;
 }
 
 .about-me-image {
@@ -107,3 +200,213 @@ body {
     object-fit: cover;
 }
 
+.skills {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.skills-table {
+    margin: 0 auto 0 auto;
+    width: 70%;
+    border: 1px solid #5DD9C8;
+    border-radius: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: flex-start;
+}
+
+.skills-table-section {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    align-items: center;
+    justify-content: flex-start;
+    height: 96%;   
+}
+
+.skills-table-section:not(:last-child) {
+    border-right: 1px solid #5DD9C8;
+}
+
+.skills-table-icon-wrapper {
+    height: 80px;
+    width: auto;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.skills-table-icon {
+    object-fit: cover;
+}
+
+.skills-table-header {
+    font-family: TildaSans;
+    font-size: 35px;
+    font-weight: 700;
+    text-align: center;
+    height: 60px;
+}
+
+.skills-table-description {
+    font-family: TildaSans;
+    font-size: 25px;
+    font-weight: 400;
+    text-align: center;
+    height: 100px
+}
+
+.skills-table-subtitile {
+    font-family: TildaSans;
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    color: #ff9235;
+    margin: 0
+}
+
+.skills-table-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.skills-table-list-item {
+    font-family: TildaSans;
+    font-size: 25px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3vw;
+    margin-bottom: 20px;
+}
+
+.projects-display {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2vw;
+    width: 80%;
+    justify-content: center;
+    margin: 0 auto
+}
+
+.project-item {
+    padding: 0;
+    margin: 0;
+    height: 13.5vw;
+    width: 24vw;
+    border: 2px solid #8063A6;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.project-item:hover {
+    opacity: 0.5;
+}
+
+.project-link {
+    height: 100%;
+    width: 100%;
+}
+
+.project-image {
+    height: 100%;
+    width: auto;
+    object-fit: cover;
+}
+
+.projects-github-button {
+    background-color: white;
+    color: #ff9235;
+    height: 40px;
+    width: 250px;
+    font-family: TildaSans;
+    font-weight: 600;
+    font-size: 20px;
+    border: 2px solid #ff9235;
+    align-self: center;
+    border-radius: 15px;
+}
+
+.projects-github-button:hover {
+    color: white;
+    background-color: #ff9235;
+}
+
+.contact-text-wrapper {
+    background-color: #5DD9C8;
+    padding: 3vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-form-wrapper {
+    display: grid;
+    width: 90%;
+    padding: 0 10% 0 10%;
+    margin: 0 auto;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+}
+
+.contact-image-wrapper {
+    width: 25vw;
+    height: 25vw;
+    overflow: hidden;
+}
+
+.contact-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form-name-email {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.contact-form-field {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.contact-form-label {
+    font-family: TildaSans;
+    font-size: 30px;
+    font-weight: 300;
+}
+
+.contact-form-input {
+    max-width: 20vw;
+    min-width: 150px;
+    font-family: TildaSans;
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 50px;
+    border: 1px solid #FF9235;
+    border-radius: 12px;
+}
+
+
+
+.contact-form-text .contact-form-input {
+    max-width: 50vw;
+    min-width: 350px;
+    min-height: 150px;
+    max-height: 20vw;
+}
